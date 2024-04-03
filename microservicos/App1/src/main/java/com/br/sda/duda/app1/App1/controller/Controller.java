@@ -28,7 +28,7 @@ public class Controller {
 
     @GetMapping("/getNumber/")
     public ResponseEntity<Integer> returnNumber() {
-// Tentativa1 de fazer o teste de cinexão, podia ter feito de outra forma mas n fui pago o suficiente
+// Tentativa1 de fazer o teste de conexão
 //        List<ServiceInstance> instances = eurekaClient.getInstancesById("app2");
 //        if (!instances.isEmpty()) {
             return ResponseEntity.ok(app2Client.getNumber());
