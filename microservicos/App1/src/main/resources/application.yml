@@ -1,0 +1,20 @@
+spring:
+
+  application:
+    name: app1
+server:
+  port: ${DEMO_SERVER:8081}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  info:
+    env:
+      enabled: true
